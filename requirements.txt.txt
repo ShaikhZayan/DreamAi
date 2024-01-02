@@ -1,0 +1,3 @@
+streamlit==1.14.0
+langchain
+firebase-admin==5.0.1
