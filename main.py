@@ -56,9 +56,6 @@ with st.form(key="dream_form"):
             # Display dream details with enhanced formatting
             st.markdown("## Dream Analysis")
             st.success(result['dream_desc'])
-clear_chat_button = st.button("Clear Chat", help="Click to clear the chat and start again")
-if 'result' in locals():
-    st.button("Clear Chat", help="Click to clear the chat and start again")
 
 st.markdown("---")
 st.markdown("<h3 id='developer-info'>Developer Information</h3>", unsafe_allow_html=True)
