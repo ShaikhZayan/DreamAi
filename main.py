@@ -6,6 +6,13 @@ import firebase_admin
 from firebase_admin import credentials, auth
 import time
 import re
+from pathlib import Path
+
+THIS_DIR = Path(__file__).parent
+CSS_FILE = THIS_DIR / "style" / "style.css"
+
+with open(CSS_FILE) as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Set the page title and favicon
 st.set_page_config(page_title="Dream Interpretation AI", page_icon=":purple[🌙]:")
@@ -68,17 +75,7 @@ adsense_secrets = st.secrets["adsense"]
 #2
 # AdSense code
 st.markdown(f"""
-<script async src="{adsense_secrets["script_url"]}" crossorigin="anonymous"></script>
-<!-- Your AdSense Ad Unit Code -->
-<ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="{adsense_secrets["ad_client"]}"
-        data-ad-slot="{adsense_secrets["ad_slot"]}"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-<script>
-        (adsbygoogle = window.adsbygoogle || []).push({{}});
-</script>
+<script async src="{adsense_secrets["script_url"]}" crossorigin="anonymous"></script>s
 """, unsafe_allow_html=True)
 
 # Developer Information
