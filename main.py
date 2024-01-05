@@ -11,6 +11,11 @@ from pathlib import Path
 # Set the page title and favicon
 st.set_page_config(page_title="Dream Interpretation AI", page_icon=":purple[🌙]:")
 
+# AdSense code
+st.markdown("""
+<meta name="google-adsense-account" content="ca-pub-3252101951306223">
+""", unsafe_allow_html=True)
+
 THIS_DIR = Path(__file__).parent
 CSS_FILE = THIS_DIR / "style.css"
 
@@ -68,11 +73,6 @@ with st.form(key="dream_form"):
             # Display dream details with enhanced formatting
             st.markdown("## Dream Analysis")
             st.success(result['dream_desc'])
-
-# AdSense code
-st.markdown("""
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3252101951306223" crossorigin="anonymous"></script>
-""", unsafe_allow_html=True)
 
 # Developer Information
 st.markdown("---")
