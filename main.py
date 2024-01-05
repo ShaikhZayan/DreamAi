@@ -6,13 +6,6 @@ import firebase_admin
 from firebase_admin import credentials, auth
 import time
 import re
-from pathlib import Path
-
-THIS_DIR = Path(__file__).parent
-CSS_FILE = THIS_DIR / "style" / "style.css"
-
-with open(CSS_FILE) as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Set the page title and favicon
 st.set_page_config(page_title="Dream Interpretation AI", page_icon=":purple[🌙]:")
