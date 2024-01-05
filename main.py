@@ -64,11 +64,9 @@ with st.form(key="dream_form"):
             st.success(result['dream_desc'])
 
 # AdSense secrets
-adsense_secrets = st.secrets["adsense"]
-#2
-# AdSense code
-st.markdown(f"""
-<script async src="{adsense_secrets["script_url"]}" crossorigin="anonymous"></script>s
+
+st.markdown("""
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3252101951306223" crossorigin="anonymous"></script>
 """, unsafe_allow_html=True)
 
 # Developer Information
