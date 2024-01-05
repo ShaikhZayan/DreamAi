@@ -6,9 +6,16 @@ import firebase_admin
 from firebase_admin import credentials, auth
 import time
 import re
+from pathlib import Path
 
 # Set the page title and favicon
 st.set_page_config(page_title="Dream Interpretation AI", page_icon=":purple[🌙]:")
+
+THIS_DIR = Path(__file__).parent
+CSS_FILE = THIS_DIR / "style.css"
+
+with open(CSS_FILE) as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Add a title and description with Markdown formatting
 st.title("Dream Interpretation AI")
