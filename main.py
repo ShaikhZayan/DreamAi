@@ -39,8 +39,7 @@ with st.form(key="dream_form"):
             with st.spinner("Analyzing your dream..."):
                 time.sleep(3)
                 # API key (replace with your own key)
-                openai_secrets = st.secrets["openai"]
-                openai_api_key = openai_secrets["api_key"]
+                openai_api_key = st.secrets["OPENAI_API_KEY"]
                 # Set up OpenAI language model
                 llms = OpenAI(api_key=openai_api_key)
                 # Define prompt template
@@ -63,8 +62,7 @@ with st.form(key="dream_form"):
             st.markdown("## Dream Analysis")
             st.success(result['dream_desc'])
 
-# AdSense secrets
-
+# AdSense code
 st.markdown("""
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3252101951306223" crossorigin="anonymous"></script>
 """, unsafe_allow_html=True)
