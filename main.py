@@ -11,13 +11,6 @@ from pathlib import Path
 # Set the page title and favicon
 st.set_page_config(page_title="Dream Interpretation AI", page_icon=":purple[🌙]:")
 
-# AdSense code
-st.markdown("""
-<head>
-<meta name="google-adsense-account" content="ca-pub-3252101951306223">
-</head>
-""", unsafe_allow_html=True)
-
 THIS_DIR = Path(__file__).parent
 CSS_FILE = THIS_DIR / "style.css"
 
