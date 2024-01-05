@@ -65,7 +65,7 @@ with st.form(key="dream_form"):
 
 # AdSense secrets
 adsense_secrets = st.secrets["adsense"]
-
+#2
 # AdSense code
 st.markdown(f"""
 <script async src="{adsense_secrets["script_url"]}" crossorigin="anonymous"></script>
