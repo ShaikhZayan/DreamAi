@@ -4,8 +4,11 @@
 
 .st-emotion-cache-1dp5vir.ezrtsby1 {
     visibility: visible ;
-}
+    background-image: linear-gradient(90deg, rgb(0, 174, 255), rgb(76, 0, 255), rgb(0, 145, 101));
+    z-index: 999990;
 
+}
 .st-emotion-cache-6q9sum.ef3psqc4 {
     visibility: visible ;
+
 }
