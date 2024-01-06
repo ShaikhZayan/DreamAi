@@ -19,6 +19,14 @@
 
 }
 
+.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
+    visibility: hidden;
+}
+
+.viewerBadge_link__qRIco {
+    visibility: hidden;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 /*
@@ -79,3 +87,4 @@ svg text {
         stroke-width: 0.5;
     }
 }
+
