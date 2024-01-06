@@ -9,6 +9,7 @@
 
 .st-emotion-cache-1dp5vir.ezrtsby1 {
     visibility: visible ;
+    height: 2.3px;
     background-image: linear-gradient(90deg, rgb(0, 204, 255), rgb(98, 0, 255), rgba(0, 255, 179, 0.856));
     z-index: 999990;
 
@@ -20,30 +21,33 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
-
+/*
 svg {
     font-family: "Russo One", sans-serif;
     width: 100%;
-    height: 100%;
+    @media (max-width: 600px) {
+        transform: translateY(1px);
+    }
 }
 
 svg text {
-    transform: translateY(2.5vw); /* Adjust translateY for smaller screens */
+    transform: translateY(2.5vw); /* Adjust translateY for default screens
     animation: stroke 5s infinite alternate;
-    stroke-width: 0.2vw; /* Adjust stroke-width for smaller screens */
+    stroke-width: 0.2vw; /* Adjust stroke-width for default screens
     stroke: rgba(0, 255, 179, 0.856);
     font-size: 4.9vw; /* Default font size for larger screens */
 
-    /* Media Query for smaller screens (e.g., phones) */
+    /* Media Query for smaller screens (e.g., phones)
     @media (max-width: 600px) {
-        transform: translateY(4vw); /* Adjust translateY for smaller screens */
-        font-size: 8.8vw ; /* Adjust font size for smaller screens */
-        stroke-width: 0.4vw; /* Adjust stroke-width for smaller screens */
+        margin-bottom: 0px;
+        transform: translateY(2vw); /* Adjust translateY for smaller screens
+        font-size: 8.8vw; /* Adjust font size for smaller screens
+        stroke-width: 0.4vw; /* Adjust stroke-width for smaller screens
     }
 
-    /* Additional: Set a max-width for extremely large screens */
+    /* Additional: Set a max-width for extremely large screens
     @media (min-width: 1200px) {
-        max-width: 1200px; /* Adjust the value as needed */
+        max-width: 1200px; /* Adjust the value as needed
     }
 }
 

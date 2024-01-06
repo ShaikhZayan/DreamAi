@@ -17,14 +17,14 @@ CSS_FILE = THIS_DIR / "style.css"
 with open(CSS_FILE) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.markdown("""
-<svg>
-	<text x="50%" y="50%" dy=".35em" text-anchor="middle">
-		Dream Interpretation AI
-	</text>
-</svg>
-""", unsafe_allow_html=True)
-# st.title("Dream Interpretation AI")
+# st.markdown("""
+# <svg>
+# 	<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+# 		Dream Interpretation AI
+# 	</text>
+# </svg>
+# """, unsafe_allow_html=True)
+st.title("Dream Interpretation AI")
 st.markdown("Welcome to the **Dream Interpretation AI**. Enter details about your dream, and let's explore its meaning!")
 st.sidebar.header("About Dream Interpretation AI")
 st.sidebar.info("This AI helps you interpret and understand your dreams by generating symbolized descriptions.")
