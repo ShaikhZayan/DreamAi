@@ -2,3 +2,4 @@ streamlit
 langchain
 firebase-admin
 openai
+langchain-community
